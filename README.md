@@ -16,11 +16,13 @@ docker run -it --name spark-container -p 8888:8888 -v "C:\Users\Waaz:/home/jovya
 - `-v "C:\Users\Waaz:/home/jovyan/work"`: Mounts the folder `C:\Users\Waaz` on your computer to the directory `/home/jovyan/work` inside the container.  
 - `jupyter/pyspark-notebook`: Specifies the image to use for the container.
 
-### Step 3: Start the Container  
+### Step 2: Start the Container  
 To start the container, use the following command:  
 ```bash
 docker start spark-container
 ```  
+Click on the link generated to open up the editor.
+
 
 ### Check Running Containers  
 To check active containers, use the following command:  
