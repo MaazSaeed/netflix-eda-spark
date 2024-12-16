@@ -4,14 +4,7 @@ This notebook performs Exploratory Data Analysis (EDA) on Netflix shows using Py
 
 ## Process  
 
-### Step 1: Display Docker Help  
-Run the following command:  
-```bash
-docker run --help
-```  
-This shows the help information for the `docker run` command, which is used to start Docker containers.
-
-### Step 2: Start the Jupyter Notebook Container  
+### Step 1: Start the Jupyter Notebook Container  
 Run the following command:  
 ```bash
 docker run -it --name spark-container -p 8888:8888 -v "C:\Users\Waaz:/home/jovyan/work" jupyter/pyspark-notebook
@@ -19,7 +12,7 @@ docker run -it --name spark-container -p 8888:8888 -v "C:\Users\Waaz:/home/jovya
 **Explanation:**  
 - `-it`: Runs the container in interactive mode with a terminal.  
 - `--name spark-container`: Names the container as "spark-container".  
-- `-p 8888:8888`: Maps port 8888 on your computer to port 8888 in the container.  
+- `-p 8888:8888`: Maps port 8888 on computer to port 8888 in the container.  
 - `-v "C:\Users\Waaz:/home/jovyan/work"`: Mounts the folder `C:\Users\Waaz` on your computer to the directory `/home/jovyan/work` inside the container.  
 - `jupyter/pyspark-notebook`: Specifies the image to use for the container.
 
