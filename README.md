@@ -2,6 +2,29 @@
 
 This Jupyter Notebook performs Exploratory Data Analysis (EDA) on Netflix shows using PySpark and Python libraries. It processes and visualizes data to uncover insights into Netflix's catalog.
 
+# Process
+
+# Step 1:
+Command: "docker run --help"
+This command displays the help information for the "docker run" command, which is used to start a new Docker container.
+# Step 2:
+Command: "docker run -it --name spark-container -p 8888:8888 -v 'C:\Users\Waaz:/home/jovyan/work' jupyter/pyspark-notebook"
+This command starts a new Docker container using the "jupyter/pyspark-notebook" image. The key things it does:
+
+"-it" runs the container in interactive mode with a terminal
+"--name spark-container" gives the container a name
+"-p 8888:8888" maps port 8888 on the host to port 8888 in the container
+"-v 'C:\Users\Waaz:/home/jovyan/work'" mounts the "C:\Users\Waaz" directory on the host to the "/home/jovyan/work" directory in the container
+"jupyter/pyspark-notebook" is the image used to create the container
+
+# Step 3:
+Command: "docker start spark-container"
+This command starts the Docker container named "spark-container".
+
+# To check running containers:
+Command: "docker ps"
+
+
 ## File Contents
 The notebook includes the following:
 
